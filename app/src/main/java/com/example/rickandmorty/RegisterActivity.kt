@@ -26,10 +26,10 @@ class RegisterActivity : AppCompatActivity() {
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
                 sharedPreferences.edit().putString(username, password).apply()
-                Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Usuario Creado!", Toast.LENGTH_SHORT).show()
                 finish()
             } else {
-                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Completar todos los datos", Toast.LENGTH_SHORT).show()
             }
         }
     }
